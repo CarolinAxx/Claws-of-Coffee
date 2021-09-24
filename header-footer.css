@@ -25,3 +25,49 @@
     height: 100px;
     width: auto;
 }
+
+.footer{
+    min-height: 300px;
+    background-color: #2f2721;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;  
+}
+.footer-section{
+   padding: 5%;
+   color: #e68541;
+   text-align: center;
+   font-weight: 900;
+   font-family: 'Poppins', sans-serif;
+}
+#section-address{
+    grid-column:1/2;
+}
+#section-email{
+    grid-column:2/3
+}
+#section-call-us{
+    grid-column:3/4;
+}
+#section-opening-hours{
+    grid-column:4/5;
+}
+#section-rights{
+    grid-column:1/6;
+    border-top:1px solid #CCCCCC;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 3%;   
+    color: #ffffff;
+}
+.footer-section p{
+    color:#CCCCCC;
+    font-weight: 900;
+}
+.footer-section h4{
+    color:#FFFFFF;
+    font-size: larger;
+    font-weight: bold;
+}
+.footer-section a{
+    color:#e68541;
+    }
