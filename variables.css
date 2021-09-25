@@ -1,6 +1,7 @@
 :root {
     --clr-primary: #2f2721;
     --clr-secondary: #e68541;
+    --clr-footer-text:#CCCCCC;
     --bread-text: #8D827A;
     --nav-link-clr: #FFFFFF;
     --font-style-sm: 'Poppins', sans-serif;
@@ -13,5 +14,6 @@
     --p-size: 16px;
     --p-weight: 400;
     --p-line-height: 26px;
+    
 }
 
