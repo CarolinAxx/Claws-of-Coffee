@@ -108,9 +108,9 @@
     grid-column:4/5;
 }
 #section-rights{
-    grid-column:1/6;
+    grid-column:1/5;
     border-top:1px solid var(--clr-footer-text);
-    font-family: 'Poppins', sans-serif;
+    font-family: var( --font-style-sm);
     padding-left: 3%;   
     color: #ffffff;
 }
@@ -149,4 +149,25 @@
         display: block;
         text-align: left;
     }
+
+    #section-address{
+        grid-column:1/5;
+    }
+    #section-email{
+        grid-column:1/5;
+    }
+    #section-call-us{
+        grid-column:1/5;
+    }
+    #section-opening-hours{
+        grid-column:1/5;
+    }
+    #section-rights{
+        grid-column:1/5;
+        border-top:1px solid var(--clr-footer-text);
+        font-family: 'Poppins', sans-serif;
+        padding-left: 3%;   
+        color: #ffffff;
+    }
+
 }
