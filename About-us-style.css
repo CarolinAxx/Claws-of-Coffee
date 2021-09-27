@@ -1,0 +1,368 @@
+
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    font-family: var(--font-style-sm);
+    font-weight: 800;
+    z-index: 1;
+  }
+
+  .grid-container h1{
+      color: #ffffff;
+      font-size: 50px;
+      font-weight:900;
+  }
+  
+  .main-container {
+    position: relative;
+    z-index: -1;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  #box6 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: orange; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  
+  #box7 {
+    grid-column: 1/13;
+    position: relative;
+    text-align: center;
+  }
+  #box0 {
+      position: relative;
+    }
+  #box7 a {
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  #box0 h1{
+    font-size: 50px;
+
+
+
+  font-size: var(--h1-size);
+      font-weight: 500;
+      text-decoration: none;
+      color: #ffffff;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);}
+  
+  #box7 img {
+    height: 100%;
+  }
+  #box6 ul {
+    line-height: 250%;
+  }
+  
+  .underline {
+    height: 3px;
+    width: 130px;
+    background-color: orange;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #box0 {
+    grid-column: 1/13;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 960px) {
+    #bg-color-top {
+      position: absolute;
+      min-height: 40%;
+      max-height: 40%;
+      width: 50%;
+      background-color: #e68541;
+      z-index: -1;
+    }
+  
+    #bg-color-middle {
+      position: absolute;
+      max-height: 25%;
+      width: 50%;
+      background-color: rgba(245, 245, 245, 0.911);
+      z-index: -1;
+      bottom: 0;
+      top: 30%;
+      left: 50%;
+    }
+    #bg-color-bottom {
+      position: absolute;
+      min-height: 40%;
+      max-height: 60%;
+      width: 50%;
+      background-color: #e68541; /* rgb(230, 133, 65, 0.5); */ /* rgb(185, 185, 185); */
+      z-index: -1;
+      z-index: -1;
+      bottom: 0;
+      top: 60%;
+      right: 50%;
+    }
+  
+    #box1 {
+      grid-column: 1/6;
+      margin: 8% 1% 8% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #box2 {
+      grid-column: 6/13;
+      margin: 12% 7% 10% 7%;
+    }
+    #box3 {
+      grid-column: 1/7;
+      margin: 5% 5% 8% 5%;
+    }
+    #box4 {
+      grid-column: 7/13;
+      margin: 0% 5% 8% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #box5 {
+      grid-column: 1/7;
+      margin: 5% 5% 0% 5%;
+    }
+    #box5 img {
+      width: 100%;
+      height: auto;
+    }
+    #box6 {
+      grid-column: 7/13;
+    }
+    #box6 h2 {
+      align-self: center;
+    }
+    #box6 .underline {
+      align-self: center;
+    }
+    #box6 img {
+      width: 100%;
+      height: auto;
+      opacity: 0.5;
+    }
+  }
+  
+  @media screen and (max-width: 960px) and (min-width: 768px) {
+    #box1 {
+      grid-column: 1/7;
+      margin: 0;
+    }
+    #box2 {
+      grid-column: 1/7;
+    }
+    #box3 {
+      grid-column: 7/13;
+      margin: 0;
+    }
+    #box4 {
+      grid-column: 7/13;
+    }
+  
+    #box0 {
+      order: 0;
+    }
+    #box1 {
+      order: 1;
+      margin: 5%;
+    }
+    #box2 {
+      order: 3;
+      margin: 5%;
+    }
+    #box3 {
+      order: 4;
+      margin: 3%;
+    }
+    #box4 {
+      order: 2;
+      margin: 3%;
+    }
+    #box5 {
+      order: 5;
+    }
+    #box6 {
+      order: 6;
+    }
+    #box7 {
+      order: 7;
+    }
+  
+    #box5 {
+      grid-column: 1/13;
+      margin: 0 10%;
+    }
+    #box6 {
+      grid-column: 1/13;
+      margin: 0 5% 5%;
+    }
+  
+    #bg-color-top {
+      position: absolute;
+      min-height: 25%;
+      max-height: 35%;
+      width: 50%;
+      background-color: #e68541;
+      z-index: -2;
+      bottom: 60%;
+      top: 0;
+    }
+  
+    #bg-color-middle {
+      position: absolute;
+      min-height: 30%;
+      max-height: 40%;
+      width: 60%;
+      background-color: rgba(245, 245, 245, 0.911);
+      z-index: -3;
+      bottom: 20%;
+      top: 35%;
+      left: 40%;
+    }
+    #bg-color-bottom {
+      width: 100%;
+      position: absolute;
+      min-height: 30%;
+      max-height: 40%;
+      background-color: rgba(245, 245, 245, 0.911);
+      z-index: -3;;
+      z-index: -1;
+      z-index: -1;
+      top: 62%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  
+    #box6 img {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6,
+    #box0,
+    #box7 {
+      margin: 1%;
+      padding: 1%;
+      grid-column: 1/13;
+    }
+    
+    #box1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #box4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #box0 {
+      order: 0;
+    }
+    #box1 {
+      order: 1;
+    }
+    #box2 {
+      order: 2;
+    }
+    #box3 {
+      order: 4;
+    }
+    #box4 {
+      order: 3;
+    }
+    #box5 {
+      order: 5;
+    }
+    #box6 {
+      order: 6;
+    }
+    #box7 {
+      order: 7;
+    }
+    #bg-color-top {
+      position: absolute;
+      min-height: 5%;
+      max-height: 10%;
+      width: 100%;
+      background-color: #e68541;
+      z-index: -2;
+      top:0%;
+      bottom: 95%;
+      
+    }
+  
+    #bg-color-middle {
+      position: absolute;
+      min-height: 30%;
+      max-height: 40%;
+      width: 50%;
+      background-color: rgba(245, 245, 245, 0.911);
+      z-index: -3;
+      bottom: 0;
+      top: 10%;
+      left:0;
+      
+    }
+    #bg-color-bottom {
+      width: 100%;
+      position: absolute;
+      min-height: 30%;
+      max-height: 40%;
+      background-color:rgba(245, 245, 245, 0.911);;
+      z-index: -1;
+      top: 60%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    #box6 h2 {
+      align-self: center;
+    }
+    #box6 .underline {
+      align-self: center;
+    }
+    #box6 img {
+      width: 100%;
+      height: auto;
+      opacity: 1;
+    }
+  }
+  
