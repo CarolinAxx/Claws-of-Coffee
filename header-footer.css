@@ -152,12 +152,15 @@
 
     #section-address{
         grid-column:1/5;
+        border-bottom:1px solid var(--clr-footer-text);
     }
     #section-email{
         grid-column:1/5;
+        border-bottom:1px solid var(--clr-footer-text);
     }
     #section-call-us{
         grid-column:1/5;
+        border-bottom:1px solid var(--clr-footer-text);
     }
     #section-opening-hours{
         grid-column:1/5;
