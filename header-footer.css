@@ -36,8 +36,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color:var(--clr-primary) ;
+    /*background-color:var(--clr-primary) ;*/
     width: 100%;
+    position: absolute;
+    top: 0px;
 }
 
 .nav-container{
