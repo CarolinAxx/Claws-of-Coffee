@@ -44,3 +44,351 @@
 .hero-button:hover{
     background-color: var(--clr-secondary);
 }
+
+/*Boxarna*/
+
+.box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    justify-content: end;
+}
+
+.headerbox1,
+.headerbox2{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    z-index: 3;
+    bottom: 150px;
+    width: 19%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.headerbox1{
+    background-image: url(images/coffe-box1.jpg);
+
+}
+
+.headerbox2{
+    margin-right: 40px;
+    background-image: url(images/coffe-box2.jpg);
+    background-position: bottom;
+}
+
+.headerbox1 h5,
+.headerbox2 h5{
+    width: 50%;
+    font-family: var(--font-style-sm);
+    font-size: 18px;
+    margin-top: 100px;
+    margin-left: 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.headerbox1 h5 a,
+.headerbox2 h5 a{
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+
+.headerbox1 h5:hover,
+.headerbox2 h5:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*grid content*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin: auto;
+}
+
+#item2{
+    z-index: 3;
+    grid-column: 1/3;
+    background-color: #f2f2f2;
+}
+
+.grid-image{
+    margin-left: 50px;
+    height: auto;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#item3,
+#item4{
+    grid-column: 3/5;
+    align-self: center;
+    margin-right: 100px;
+    font-family: var(--font-style-sm);
+    font-weight: bold;
+    margin: 5%;
+    padding: 3%;
+    margin-bottom: 100px;
+}
+
+#item3 h2,
+#item4 h2{
+    font-size: var(--h2-size);
+}
+
+.underline{
+    width: 130px;
+    height: 3px;
+    background: var(--clr-secondary);
+    margin: 2% 0;
+
+}
+
+#item4{
+    grid-column: 1/3;
+    margin-bottom: 300px;   
+
+}
+
+#item4 p{
+    margin-bottom: 30px;
+}
+
+#item5{
+    grid-column: 3/5;
+    background-color: #f2f2f2;
+    margin-bottom: 300px;
+}
+
+#item4 > a{
+    width: 200px;
+    height: 50px;
+    padding: 2%;
+
+}
+
+.adopt-button{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: var(--clr-secondary);
+}
+
+.adopt-button:hover{
+    background-color: #b55917;
+}
+
+/*last section*/
+
+.icon-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.coffe-image{
+    background-image: url(images/bg-sleeping-cat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+}
+
+.iconbox1,
+.iconbox2,
+.iconbox3{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+    bottom: 170px;
+    width: 19%;
+    margin: 2%;
+    padding: 2.5%;
+    flex-direction: column;
+    font-family: var(--font-style-sm);
+    font-weight: bold;
+}
+
+.iconbox1{
+    background-color: var(--clr-secondary);
+}
+
+.iconbox1 i{
+    font-size: 100px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.iconbox1 p{
+    color: #f2f2f2;
+}
+
+.iconbox2{
+    background-color: #f2f2f2;
+
+}
+
+.iconbox2 i{
+    font-size: 100px;
+    color: var(--clr-primary);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.iconbox2 p{
+    color: var(--clr-primary);
+}
+
+.iconbox3{
+    background-color: var(--clr-primary);
+}
+
+.iconbox3 i{
+    font-size: 100px;
+    color: var(--clr-secondary);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.iconbox3 p{
+    color: var(--clr-secondary);
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 768px){
+    .hero-image div {
+        height: 600px;
+    }
+
+    .hero-image{
+        height: 600px;
+
+    }
+
+    .hero-image h1 {
+        font-size: 30px;
+    }
+
+    .headerbox1, 
+    .headerbox2 {
+        height: 250px;
+        width: 25%;
+    }
+
+    .iconbox1, 
+    .iconbox2, 
+    .iconbox3 {
+        width: 25%;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero-image h1{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hero-image div{
+        height: 450px;
+        background-size: inherit;
+    }
+
+    .hero-image{
+        height: 450px;
+    }
+
+    .hero-button{
+        margin-left: 0;
+        justify-self: center;
+    }
+
+    .box-wrapper{
+        height: 350px;
+        justify-content: unset;
+        width: 100%;
+        flex-flow: column;
+        margin-top: 20px;
+    }
+
+    .headerbox1, 
+    .headerbox2{ 
+        position: unset; 
+        z-index: unset; 
+        bottom: unset; 
+        width: unset;
+        flex: auto;
+    }
+
+    .headerbox2{
+        background-position: center;
+        margin-right: 0;
+    }
+
+    #item2,
+    #item1,
+    #item3,
+    #item4,
+    #item5{
+        grid-column: 1/7;
+
+    }
+
+    .grid-image{
+        margin-bottom: 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #item3, 
+    #item4,
+    #item5{
+        margin-bottom: 50px;
+    }
+
+    #item4{
+        margin-bottom: 0;
+
+    }
+ 
+    #item4{
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .icon-wrapper{
+        flex-flow: column;
+        margin-bottom: 60px;
+        height: 800px;
+
+    }
+
+    .iconbox1,
+    .iconbox2, 
+    .iconbox3{
+        position: unset; 
+        z-index: unset; 
+        bottom: unset; 
+        width: 100%;
+        margin: 0;
+    }
+
+    .coffe-image{
+        height: 1050px;
+        background-image: url(images/mobile-bg.jpg);
+    }
+}
