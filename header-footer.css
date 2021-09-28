@@ -126,11 +126,24 @@
     color:var(--clr-secondary);
     }
 
-@media screen and (max-width: 960px){
+
+@media screen and (max-width: 960px) {
 
     .nav-container{
         justify-content: space-between;
         flex-direction: row;
+        padding: 0;
+        z-index: 4;
+    }
+
+    .logo{
+        height: 60px;
+    }
+
+    .header-container, .nav-container{
+        position: sticky;
+        background-color: var(--clr-primary);
+        z-index: 4;
     }
 
     .main-nav a:not(:first-child) {display: none;}
@@ -173,3 +186,4 @@
     }
 
 }
+
