@@ -66,6 +66,9 @@
         "text-mio . "
 }
 
+.main-nav{
+    z-index: 1;
+}
 
 
 main{
@@ -78,6 +81,8 @@ grid-template-areas:
 "cat-luci our-cats"
 "cat-jum cat-mio"
 ;
+
+
 
 }
 .text-adoption{
@@ -113,11 +118,22 @@ p{
   line-height: var(--p-line-height);
 }
 
-img {
+.cats-main img{
   height: 400px;
   width: 350px;
  
 }
+
+.header-container-adoption img {
+    width: 100%;
+    z-index: -1;
+    height: 275px
+
+    
+    
+}
+
+
 
 main li {
 margin-top: 50px;
