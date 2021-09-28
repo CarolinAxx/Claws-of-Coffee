@@ -1,0 +1,148 @@
+.img-Lucifer{
+    grid-area: img-luci;
+}
+.facts-lucifer{
+    grid-area: facts-luci;
+   
+}
+.text-lucifer {
+    grid-area: text-luci;
+}
+.img-JumJum{
+    grid-area: img-jum;
+}
+.facts-jum{
+    grid-area: facts-jum;
+}
+.text-jum {
+    grid-area: text-jum;
+}
+.img-mio{
+    grid-area: img-mio;
+}
+.facts-mio{
+    grid-area: facts-mio;
+    
+}
+.text-mio {
+    grid-area: text-mio;
+}
+
+.our-cats{
+    grid-area: our-cats;
+    padding: 70px;
+}
+.cat-Lucifer{
+    grid-area: cat-luci;
+    
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;  
+        grid-template-areas:
+        "img-luci facts-luci"
+        "text-luci . "
+}
+
+
+.cat-Jum-Jum{
+    grid-area: cat-jum;
+    min-height: 300px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;  
+        grid-template-areas:
+        "img-jum facts-jum"
+        "text-jum . "
+}
+.cat-Mio{
+    grid-area: cat-mio;
+    min-height: 300px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;  
+        grid-template-areas:
+        "img-mio facts-mio"
+        "text-mio . "
+}
+
+
+
+main{
+min-height: 300px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;  
+grid-template-areas: 
+
+"cat-luci our-cats"
+"cat-jum cat-mio"
+;
+
+}
+.text-adoption{
+padding: 60px 45px;
+
+}    
+
+h2{
+font-family: var(--font-style-sm);
+color: var(--clr-primary);
+font-size: var(--h2-size);
+font-weight: var(--p-weight);
+line-height: var(--p-line-height);
+padding-bottom: 40px;
+
+}
+.hz-line{
+background-color: var(--clr-secondary);
+height: 3px;
+width: 100px;
+
+
+
+}
+
+
+p{
+  padding-top: 50px;
+  font-family: var(--font-style-sm);
+  color: var(--bread-text);
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  line-height: var(--p-line-height);
+}
+
+img {
+  height: 400px;
+  width: 350px;
+ 
+}
+
+main li {
+margin-top: 50px;
+}
+
+[class*= "cat"]{
+font-family: var(--font-style-sm);
+color: var(--bread-text);
+font-size: var(--p-size);
+font-weight: var(--p-weight);
+line-height: var(--p-line-height);
+padding: 40px;
+
+}
+
+@media screen and (max-width: 1200px) { 
+  main{
+min-height: 300px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;  
+grid-template-areas: 
+
+"cat-luci our-cats"
+"cat-jum cat-mio"
+;
+
+} }
