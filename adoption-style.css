@@ -31,6 +31,7 @@
 .our-cats{
     grid-area: our-cats;
     padding: 100px;
+    background-color: var(--clr-secondary);
 
 }
 
