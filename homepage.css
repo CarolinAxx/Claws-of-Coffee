@@ -297,10 +297,11 @@
 
 @media screen and (max-width: 768px){
     .hero-image h1{
-        font-size: 20px;
+        font-size: 40px;
         width: 100%;
         text-align: center;
         margin-left: 0;
+        margin-top: 0;
     }
 
     .hero-image div{
@@ -323,6 +324,13 @@
         width: 100%;
         flex-flow: column;
         margin-top: 20px;
+    }
+    .headerbox1 h5, .headerbox2 h5{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        margin-top: 50px;
     }
 
     .headerbox1, 
@@ -385,6 +393,11 @@
         bottom: unset; 
         width: 100%;
         margin: 0;
+    }
+    .iconbox1 p,
+    .iconbox2 p,
+    .iconbox3 p{
+        text-align: center;
     }
 
     .coffe-image{
