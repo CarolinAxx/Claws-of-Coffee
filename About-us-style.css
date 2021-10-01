@@ -255,7 +255,7 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
    #box0 h1 {
     font-size: 40px;
