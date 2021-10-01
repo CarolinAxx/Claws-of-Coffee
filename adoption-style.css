@@ -244,4 +244,9 @@ grid-template-areas:
   "cat-mio"
   ;
   
-  } }
+  } 
+  .lower-button {
+    position: relative;
+    bottom: 225px;
+    left: 15%;
+}
